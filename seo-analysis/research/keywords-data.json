@@ -1,0 +1,91 @@
+{
+  "project": "semikron Distributor GEO SEO",
+  "research_date": "2026-04-08",
+  "total_keywords": 48,
+  "categories": {
+    "geographic": {
+      "name": "地域型 (Geographic)",
+      "count": 13,
+      "keywords": [
+        {"keyword": "semikron distributor USA", "priority": "high", "intent": "transactional", "countries": ["USA"], "volume_estimate": "medium"},
+        {"keyword": "semikron distributor Germany", "priority": "high", "intent": "transactional", "countries": ["Germany"], "volume_estimate": "high"},
+        {"keyword": "semikron distributor France", "priority": "high", "intent": "transactional", "countries": ["France"], "volume_estimate": "medium"},
+        {"keyword": "semikron distributor India", "priority": "high", "intent": "transactional", "countries": ["India"], "volume_estimate": "high"},
+        {"keyword": "semikron distributor Vietnam", "priority": "high", "intent": "transactional", "countries": ["Vietnam"], "volume_estimate": "medium"},
+        {"keyword": "semikron distributor Malaysia", "priority": "medium", "intent": "transactional", "countries": ["Malaysia"], "volume_estimate": "low"},
+        {"keyword": "semikron distributor Japan", "priority": "medium", "intent": "transactional", "countries": ["Japan"], "volume_estimate": "medium"},
+        {"keyword": "semikron distributor Korea", "priority": "medium", "intent": "transactional", "countries": ["Korea"], "volume_estimate": "medium"},
+        {"keyword": "semikron distributor Mexico", "priority": "medium", "intent": "transactional", "countries": ["Mexico"], "volume_estimate": "low"},
+        {"keyword": "semikron distributor Turkey", "priority": "medium", "intent": "transactional", "countries": ["Turkey"], "volume_estimate": "low"},
+        {"keyword": "semikron distributor Italy", "priority": "medium", "intent": "transactional", "countries": ["Italy"], "volume_estimate": "medium"},
+        {"keyword": "semikron distributor Poland", "priority": "medium", "intent": "transactional", "countries": ["Poland"], "volume_estimate": "low"},
+        {"keyword": "semikron distributor Brazil", "priority": "low", "intent": "transactional", "countries": ["Brazil"], "volume_estimate": "low"}
+      ]
+    },
+    "hybrid_geographic": {
+      "name": "混合地域型 (Hybrid Geographic)",
+      "count": 10,
+      "keywords": [
+        {"keyword": "semikron IGBT distributor USA", "priority": "high", "intent": "transactional", "countries": ["USA"], "volume_estimate": "medium"},
+        {"keyword": "semikron IGBT distributor Germany", "priority": "high", "intent": "transactional", "countries": ["Germany"], "volume_estimate": "medium"},
+        {"keyword": "semikron power module distributor India", "priority": "high", "intent": "transactional", "countries": ["India"], "volume_estimate": "medium"},
+        {"keyword": "semikron thyristor distributor Germany", "priority": "medium", "intent": "transactional", "countries": ["Germany"], "volume_estimate": "low"},
+        {"keyword": "semikron diode distributor USA", "priority": "medium", "intent": "transactional", "countries": ["USA"], "volume_estimate": "low"},
+        {"keyword": "semikron driver distributor Germany", "priority": "medium", "intent": "transactional", "countries": ["Germany"], "volume_estimate": "low"},
+        {"keyword": "semikron SKiM distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron MiniSKiiP distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron SEMITOP distributor", "priority": "low", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron SEMITRANS distributor", "priority": "low", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"}
+      ]
+    },
+    "product_application": {
+      "name": "产品/应用型 (Product/Application)",
+      "count": 8,
+      "keywords": [
+        {"keyword": "semikron IGBT distributor", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "high"},
+        {"keyword": "semikron power module supplier", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "high"},
+        {"keyword": "semikron thyristor distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron diode distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron driver distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron rectifier distributor", "priority": "low", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron bridge rectifier supplier", "priority": "low", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron IPM distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"}
+      ]
+    },
+    "trust_authorization": {
+      "name": "授权/信任型 (Authorization/Trust)",
+      "count": 7,
+      "keywords": [
+        {"keyword": "authorized semikron distributor", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron authorized distributor", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron certified distributor", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron official distributor", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron approved distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron authorized reseller", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron genuine parts distributor", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"}
+      ]
+    },
+    "transactional_service": {
+      "name": "交易/服务型 (Transactional/Service)",
+      "count": 6,
+      "keywords": [
+        {"keyword": "buy semikron products", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron wholesale distributor", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron bulk order", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron stockist", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron supplier near me", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron fast delivery", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"}
+      ]
+    },
+    "problem_pain_point": {
+      "name": "问题/痛点型 (Problem/Pain Point)",
+      "count": 4,
+      "keywords": [
+        {"keyword": "semikron distributor near me", "priority": "high", "intent": "transactional", "countries": ["Global"], "volume_estimate": "high"},
+        {"keyword": "where to buy semikron", "priority": "high", "intent": "informational", "countries": ["Global"], "volume_estimate": "medium"},
+        {"keyword": "semikron alternative supplier", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"},
+        {"keyword": "semikron out of stock solution", "priority": "medium", "intent": "transactional", "countries": ["Global"], "volume_estimate": "low"}
+      ]
+    }
+  }
+}

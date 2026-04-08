@@ -1,0 +1,153 @@
+{
+  "project": "semikron Distributor GEO SEO",
+  "analysis_date": "2026-04-08",
+  "competitors": [
+    {
+      "name": "Mouser Electronics",
+      "tier": "global",
+      "domain": "mouser.com",
+      "title_structure": "[Product] - [Brand] - [Category] | Mouser [Country]",
+      "trust_signals": ["ISO 9001", "AS9100", "Authorized distributor badges", "Secure checkout", "Customer reviews"],
+      "localization_score": 9,
+      "eeat_score": 9,
+      "strengths": ["Massive inventory", "Global logistics", "Strong brand recognition", "Multi-language support", "Technical resources"],
+      "weaknesses": ["Not semikron exclusive", "Generic distributor positioning", "Less local presence in emerging markets"],
+      "country_presence": ["USA", "Germany", "France", "India", "Japan", "Korea", "Mexico", "Italy", "Poland", "Brazil"],
+      "semikron_focus": "Medium - carries semikron but not specialized"
+    },
+    {
+      "name": "Digi-Key",
+      "tier": "global",
+      "domain": "digikey.com",
+      "title_structure": "[Part Number] | [Product] | [Brand] | DigiKey",
+      "trust_signals": ["ISO 9001", "AS9120B", "Authorized distributor", "RoHS compliance", "Quality guarantee"],
+      "localization_score": 8,
+      "eeat_score": 9,
+      "strengths": ["Extensive catalog", "Fast shipping", "Strong online presence", "Engineer community", "API access"],
+      "weaknesses": ["Broad focus, not semikron specialist", "Less local support in some regions", "High minimum orders"],
+      "country_presence": ["USA", "Germany", "France", "India", "Japan", "Korea", "Mexico", "Italy", "Poland"],
+      "semikron_focus": "Medium - wide selection but not specialized"
+    },
+    {
+      "name": "Arrow Electronics",
+      "tier": "global",
+      "domain": "arrow.com",
+      "title_structure": "[Product] - [Brand] - Arrow Electronics",
+      "trust_signals": ["Fortune 500", "Global presence", "Authorized distributor", "Technical support", "Design resources"],
+      "localization_score": 9,
+      "eeat_score": 9,
+      "strengths": ["Enterprise focus", "Design support", "Global supply chain", "Strong relationships with manufacturers"],
+      "weaknesses": ["Enterprise-centric, less SMB friendly", "Complex ordering process", "Less agile than smaller distributors"],
+      "country_presence": ["USA", "Germany", "France", "India", "Japan", "Korea", "Mexico", "Italy", "Poland", "Brazil"],
+      "semikron_focus": "Medium - strong in enterprise, less in small batch"
+    },
+    {
+      "name": "Avnet",
+      "tier": "global",
+      "domain": "avnet.com",
+      "title_structure": "[Product] | [Brand] | Avnet",
+      "trust_signals": ["Fortune 500", "Global network", "Authorized distributor", "Technical expertise", "Financial stability"],
+      "localization_score": 8,
+      "eeat_score": 9,
+      "strengths": ["Full-service distribution", "Supply chain solutions", "Design services", "Global reach"],
+      "weaknesses": ["Less online-focused", "Complex organizational structure", "Slower to market in some regions"],
+      "country_presence": ["USA", "Germany", "France", "India", "Japan", "Korea", "Mexico", "Italy", "Poland"],
+      "semikron_focus": "Medium - broad line card"
+    },
+    {
+      "name": "Rutronik",
+      "tier": "regional",
+      "domain": "rutronik24.com",
+      "title_structure": "[Product] - [Brand] - Rutronik [Country]",
+      "trust_signals": ["ISO 9001", "ISO 14001", "Authorized distributor", "European presence", "Technical competence"],
+      "localization_score": 8,
+      "eeat_score": 8,
+      "strengths": ["Strong European presence", "Technical focus", "Good local support", "Competitive pricing"],
+      "weaknesses": ["Limited presence outside Europe", "Less brand recognition globally", "Smaller inventory than global players"],
+      "country_presence": ["Germany", "France", "Italy", "Poland"],
+      "semikron_focus": "High - strong semikron partnership"
+    },
+    {
+      "name": "Future Electronics",
+      "tier": "global",
+      "domain": "futureelectronics.com",
+      "title_structure": "[Product] - [Brand] | Future Electronics",
+      "trust_signals": ["Global presence", "Authorized distributor", "Technical support", "Supply chain services"],
+      "localization_score": 7,
+      "eeat_score": 8,
+      "strengths": ["Global network", "Supply chain expertise", "Design support"],
+      "weaknesses": ["Less online visibility", "Complex navigation", "Limited local content"],
+      "country_presence": ["USA", "Germany", "France", "India", "Japan", "Korea", "Mexico", "Italy"],
+      "semikron_focus": "Medium"
+    },
+    {
+      "name": "TTI Inc",
+      "tier": "regional",
+      "domain": "ttinc.com",
+      "title_structure": "[Product] - [Brand] - TTI",
+      "trust_signals": ["Berkshire Hathaway", "Authorized distributor", "Passives specialist"],
+      "localization_score": 7,
+      "eeat_score": 7,
+      "strengths": ["Financial backing", "Passives expertise", "Global footprint"],
+      "weaknesses": ["Less focus on power electronics", "Limited semikron inventory"],
+      "country_presence": ["USA", "Germany", "France", "India", "Japan", "Korea", "Mexico"],
+      "semikron_focus": "Low - not a primary focus"
+    },
+    {
+      "name": "IndiaMART",
+      "tier": "local",
+      "domain": "indiamart.com",
+      "title_structure": "[Product] - [Brand] - Suppliers in India",
+      "trust_signals": ["B2B marketplace", "Verified suppliers", "India focus"],
+      "localization_score": 9,
+      "eeat_score": 6,
+      "strengths": ["Dominant in India", "Large supplier network", "Local language support"],
+      "weaknesses": ["Quality varies", "Not authorized distributor focused", "Limited technical support"],
+      "country_presence": ["India"],
+      "semikron_focus": "Medium - many listings but mixed authenticity"
+    },
+    {
+      "name": "Local German Distributors",
+      "tier": "local",
+      "domain": "various",
+      "title_structure": "[Product] - [Brand] - [Company Name] Germany",
+      "trust_signals": ["Local business registration", "German quality standards", "Local support"],
+      "localization_score": 9,
+      "eeat_score": 7,
+      "strengths": ["Local relationships", "German language support", "Fast local delivery"],
+      "weaknesses": ["Limited inventory", "Less online presence", "Regional only"],
+      "country_presence": ["Germany"],
+      "semikron_focus": "High - specialized local distributors"
+    },
+    {
+      "name": "Chinese Cross-border Distributors",
+      "tier": "local",
+      "domain": "alibaba.com, made-in-china.com",
+      "title_structure": "[Product] - [Brand] - China Supplier",
+      "trust_signals": ["Platform verification", "Trade assurance", "Supplier ratings"],
+      "localization_score": 5,
+      "eeat_score": 5,
+      "strengths": ["Low prices", "Large selection", "Flexible MOQ"],
+      "weaknesses": ["Authenticity concerns", "Long shipping times", "Limited warranty", "Language barriers"],
+      "country_presence": ["Global via platforms"],
+      "semikron_focus": "High - many listings, variable authenticity"
+    }
+  ],
+  "differentiation_opportunities": {
+    "our_advantages": [
+      "Authorized semikron distributor focus (vs. broad line card)",
+      "Local warehouse in target countries (vs. centralized shipping)",
+      "Fast local delivery (vs. international shipping)",
+      "Price competitiveness (vs. global distributor markup)",
+      "Local language support (vs. English-only)",
+      "Technical support in local time zones"
+    ],
+    "content_gaps": [
+      "Country-specific semikron product guides",
+      "Local application case studies",
+      "Authorized distributor verification system",
+      "Real-time local inventory visibility",
+      "Local technical support documentation"
+    ]
+  }
+}

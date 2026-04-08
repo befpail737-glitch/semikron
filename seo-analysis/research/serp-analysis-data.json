@@ -1,0 +1,114 @@
+{
+  "project": "semikron Distributor GEO SEO",
+  "analysis_date": "2026-04-08",
+  "serp_features": {
+    "featured_snippets": [
+      "What is semikron?",
+      "Where to buy semikron products?",
+      "semikron product categories",
+      "IGBT module applications"
+    ],
+    "paa_questions": [
+      "Who are semikron distributors?",
+      "What products does semikron make?",
+      "Where is semikron located?",
+      "How to identify authorized semikron distributor?",
+      "What is the price of semikron IGBT module?",
+      "Does semikron have local distributors?",
+      "How to verify semikron product authenticity?",
+      "What is semikron SKiM technology?",
+      "Where can I buy semikron in USA?",
+      "semikron vs Infineon - which is better?"
+    ],
+    "local_pack_presence": {
+      "USA": true,
+      "Germany": true,
+      "India": true,
+      "France": false,
+      "Vietnam": false,
+      "Japan": true,
+      "Korea": true
+    },
+    "knowledge_panel": true,
+    "shopping_results": true,
+    "image_results": true,
+    "video_results": false
+  },
+  "country_insights": [
+    {
+      "country": "USA",
+      "primary_language": "English",
+      "search_engine": "Google (92%)",
+      "local_features": ["Google Business Profile prominent", "Local pack for distributor queries", "Review stars in SERP"],
+      "competitor_presence": ["Mouser Electronics", "Digi-Key", "Arrow Electronics", "Avnet"],
+      "serp_characteristics": "Highly commercial, shopping results common, strong local pack presence"
+    },
+    {
+      "country": "Germany",
+      "primary_language": "German/English",
+      "search_engine": "Google (95%)",
+      "local_features": ["Local pack for B2B queries", "German language results preferred", "Industry directory listings"],
+      "competitor_presence": ["Rutronik", "Mouser Germany", "Digi-Key Germany", "Arrow Europe"],
+      "serp_characteristics": "Bilingual results, strong local distributor presence, technical content favored"
+    },
+    {
+      "country": "India",
+      "primary_language": "English",
+      "search_engine": "Google (98%)",
+      "local_features": ["Local pack growing", "Price comparison sites prominent", "B2B marketplace listings"],
+      "competitor_presence": ["IndiaMART", "TradeIndia", "Mouser India", "Local distributors"],
+      "serp_characteristics": "High mobile usage, price-sensitive results, local B2B platforms strong"
+    },
+    {
+      "country": "Vietnam",
+      "primary_language": "Vietnamese/English",
+      "search_engine": "Google (95%)",
+      "local_features": ["Limited local pack", "English results acceptable", "Industry forum discussions"],
+      "competitor_presence": ["Local electronics suppliers", "Chinese distributors", "Regional traders"],
+      "serp_characteristics": "Growing market, less competition, English content viable"
+    },
+    {
+      "country": "France",
+      "primary_language": "French",
+      "search_engine": "Google (92%)",
+      "local_features": ["French language critical", "Local business listings", "Industry associations"],
+      "competitor_presence": ["Mouser France", "Digi-Key Europe", "Local French distributors"],
+      "serp_characteristics": "French language essential, formal business tone preferred"
+    },
+    {
+      "country": "Japan",
+      "primary_language": "Japanese",
+      "search_engine": "Google (75%), Yahoo Japan (20%)",
+      "local_features": ["Japanese language mandatory", "Yahoo Japan presence needed", "Local business etiquette"],
+      "competitor_presence": ["Local Japanese distributors", "Mouser Japan", "Rutronik Japan"],
+      "serp_characteristics": "Japanese content required, high quality expectations, formal tone"
+    },
+    {
+      "country": "Korea",
+      "primary_language": "Korean",
+      "search_engine": "Google (70%), Naver (25%)",
+      "local_features": ["Naver optimization needed", "Korean language content", "Local portal presence"],
+      "competitor_presence": ["Local Korean distributors", "Mouser Korea", "International distributors"],
+      "serp_characteristics": "Naver important, Korean language essential, local partnerships valued"
+    }
+  ],
+  "opportunity_insights": {
+    "high_opportunity_keywords": [
+      "semikron distributor + emerging markets",
+      "authorized semikron distributor + country",
+      "semikron IGBT + local supplier"
+    ],
+    "content_gaps": [
+      "Localized product pages per country",
+      "Authorized distributor verification guide",
+      "Local warehouse location pages",
+      "Country-specific pricing information"
+    ],
+    "serp_feature_opportunities": [
+      "Featured snippet optimization for 'What is semikron'",
+      "PAA targeting for distributor questions",
+      "Local pack optimization for key markets",
+      "Image optimization for product visibility"
+    ]
+  }
+}

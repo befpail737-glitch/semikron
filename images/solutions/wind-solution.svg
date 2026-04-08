@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Wind Turbine Solution -->
+  <line x1="50" y1="180" x2="50" y2="80" stroke="#9CA3AF" stroke-width="4"/>
+  <line x1="50" y1="80" x2="120" y2="60" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="50" y1="80" x2="30" y2="50" stroke="#9CA3AF" stroke-width="2"/>
+  <line x1="50" y1="80" x2="70" y2="40" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Generator -->
+  <rect x="120" y="50" width="40" height="20" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="1"/>
+  
+  <!-- Power Converter -->
+  <rect x="180" y="40" width="50" height="40" fill="#3B82F6" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="205" y="65" text-anchor="middle" fill="white" font-family="Arial" font-size="10">SKiiP</text>
+  
+  <!-- Power Lines -->
+  <line x1="230" y1="60" x2="270" y2="60" stroke="#F87171" stroke-width="2"/>
+  <circle cx="270" cy="60" r="3" fill="#F87171"/>
+  
+  <!-- Title -->
+  <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="14" fill="#1E3A8A">Wind Energy Solution</text>
+</svg>

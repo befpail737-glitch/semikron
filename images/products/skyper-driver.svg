@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <!-- SKYPER Driver -->
+  <rect x="30" y="40" width="140" height="70" rx="8" fill="#1E40AF" stroke="#1E3A8A" stroke-width="2"/>
+  <circle cx="50" cy="60" r="8" fill="#FBBF24"/>
+  <circle cx="50" cy="85" r="8" fill="#FBBF24"/>
+  <circle cx="150" cy="60" r="8" fill="#FBBF24"/>
+  <circle cx="150" cy="85" r="8" fill="#FBBF24"/>
+  <rect x="70" y="65" width="60" height="20" fill="#60A5FA"/>
+  <text x="100" y="135" text-anchor="middle" font-family="Arial" font-size="14" fill="#4B5563">SKYPER Driver</text>
+</svg>

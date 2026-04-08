@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Calculations - Semikron Distributor | Power Electronics Thermal Design</title>
+    <meta name="description" content="Semikron thermal calculations and design tools for power electronics. Calculate junction temperature, thermal resistance, and cooling requirements for IGBTs, thyristors, and IPMs.">
+    <meta name="keywords" content="Semikron thermal calculations, thermal design, junction temperature, thermal resistance, power electronics cooling, semikron distributor">
+    <meta name="author" content="LiTong Group">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://semikron.elec-distributor.com/support/thermal-calc.html">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Thermal Calculations - Semikron Distributor",
+      "author": {
+        "@type": "Organization",
+        "name": "LiTong Group"
+      },
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-01-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://semikron.elec-distributor.com/images/logo.png"
+        }
+      },
+      "description": "Semikron thermal calculations and design tools for power electronics"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>LiTong Group</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/index.html">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="../products/igbt/index.html">IGBT Modules</a></li>
+                            <li><a href="../products/thyristor/index.html">Thyristor/Diode</a></li>
+                            <li><a href="../products/ipm/index.html">IPM</a></li>
+                            <li><a href="../products/bridge/index.html">Bridge Rectifiers</a></li>
+                            <li><a href="../products/accessories/index.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../solutions/index.html">Solutions</a>
+                        <ul class="dropdown">
+                            <li><a href="../solutions/wind-energy.html">Wind Energy</a></li>
+                            <li><a href="../solutions/solar.html">Solar Power</a></li>
+                            <li><a href="../solutions/motor-drives.html">Motor Drives</a></li>
+                            <li><a href="../solutions/ev-hev.html">EV & HEV</a></li>
+                            <li><a href="../solutions/ups.html">UPS Systems</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Support</a>
+                        <ul class="dropdown">
+                            <li><a href="selection.html">Selection Guide</a></li>
+                            <li><a href="app-notes.html">Application Notes</a></li>
+                            <li><a href="thermal-calc.html">Calculations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../news/index.html">News</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> > <a href="index.html">Support</a> > Thermal Calculations
+        </div>
+    </nav>
+
+    <!-- Thermal Calc Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Thermal Calculations & Design</h1>
+                <p>Power electronics thermal analysis and cooling solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thermal Calc Introduction -->
+    <section class="thermal-intro">
+        <div class="container">
+            <h2>Essential Thermal Design for Power Electronics</h2>
+            <p>Thermal design is critical for the reliable operation and longevity of power semiconductor devices. Proper thermal management ensures that junction temperatures remain within safe operating limits, preventing degradation and failure of power modules. Semikron provides comprehensive thermal analysis tools and guidelines to help engineers calculate junction temperatures under various operating conditions and design effective cooling solutions. Our thermal models account for conduction, convection, and radiation heat transfer mechanisms, as well as the thermal characteristics of different package types and mounting methods.</p>
+            
+            <div class="intro-features">
+                <div class="feature">
+                    <h3>Accurate Modeling</h3>
+                    <p>Precise thermal models based on actual device characteristics</p>
+                </div>
+                <div class="feature">
+                    <h3>Multiple Scenarios</h3>
+                    <p>Analysis for steady-state, transient, and cyclic conditions</p>
+                </div>
+                <div class="feature">
+                    <h3>Design Optimization</h3>
+                    <p>Tools to optimize cooling solution cost and performance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thermal Calculation Principles -->
+    <section class="thermal-principles">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thermal Calculation Principles</h2>
+                <p>Fundamental concepts for thermal design</p>
+            </div>
+            <div class="principles-content">
+                <div class="principle">
+                    <h3>Junction Temperature Calculation</h3>
+                    <p>The junction temperature (TJ) is calculated using the thermal resistance model:</p>
+                    <div class="formula">
+                        <p>TJ = TA + Ptot × Rth(J-A)</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>TJ = Junction temperature (°C)</li>
+                            <li>TA = Ambient temperature (°C)</li>
+                            <li>Ptot = Total power dissipation (W)</li>
+                            <li>Rth(J-A) = Thermal resistance from junction to ambient (K/W)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="principle">
+                    <h3>Thermal Resistance Path</h3>
+                    <p>The total thermal resistance consists of multiple series resistances:</p>
+                    <div class="formula">
+                        <p>Rth(J-A) = Rth(J-C) + Rth(C-H) + Rth(H-A)</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>Rth(J-C) = Junction to case thermal resistance</li>
+                            <li>Rth(C-H) = Case to heatsink thermal resistance</li>
+                            <li>Rth(H-A) = Heatsink to ambient thermal resistance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="principle">
+                    <h3>Power Dissipation</h3>
+                    <p>Total power dissipation includes both switching and conduction losses:</p>
+                    <div class="formula">
+                        <p>Ptot = Pcond + Psw</p>
+                        <p>Where:</p>
+                        <ul>
+                            <li>Pcond = Conduction losses (depend on current and VCEsat)</li>
+                            <li>Psw = Switching losses (depend on switching frequency)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculation Tools -->
+    <section class="calculation-tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thermal Calculation Tools</h2>
+                <p>Interactive tools for thermal design analysis</p>
+            </div>
+            <div class="tools-content">
+                <div class="tool">
+                    <h3>Junction Temperature Calculator</h3>
+                    <p>Calculate junction temperature based on power dissipation and thermal resistance values.</p>
+                    
+                    <div class="calculator-form">
+                        <div class="form-row">
+                            <label for="power-dissipation">Power Dissipation (W):</label>
+                            <input type="number" id="power-dissipation" placeholder="Enter total power">
+                        </div>
+                        <div class="form-row">
+                            <label for="ambient-temp">Ambient Temperature (°C):</label>
+                            <input type="number" id="ambient-temp" placeholder="Enter ambient temp">
+                        </div>
+                        <div class="form-row">
+                            <label for="thermal-resistance">Thermal Resistance (K/W):</label>
+                            <input type="number" id="thermal-resistance" placeholder="Enter Rth value">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateJunctionTemp()">Calculate</button>
+                        
+                        <div class="result" id="junction-temp-result">
+                            <p>Junction Temperature: <span id="junction-temp-value">--</span> °C</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tool">
+                    <h3>Heatsink Sizing Tool</h3>
+                    <p>Determine required heatsink thermal resistance based on power dissipation and maximum junction temperature.</p>
+                    
+                    <div class="calculator-form">
+                        <div class="form-row">
+                            <label for="max-junction-temp">Max Junction Temperature (°C):</label>
+                            <input type="number" id="max-junction-temp" placeholder="Enter max TJ">
+                        </div>
+                        <div class="form-row">
+                            <label for="max-power">Max Power Dissipation (W):</label>
+                            <input type="number" id="max-power" placeholder="Enter max power">
+                        </div>
+                        <div class="form-row">
+                            <label for="ambient-temp2">Ambient Temperature (°C):</label>
+                            <input type="number" id="ambient-temp2" placeholder="Enter ambient temp">
+                        </div>
+                        <div class="form-row">
+                            <label for="jc-resistance">Junction-to-Case Resistance (K/W):</label>
+                            <input type="number" id="jc-resistance" placeholder="Enter Rth(J-C)">
+                        </div>
+                        <button class="btn btn-primary" onclick="calculateHeatsinkSize()">Calculate</button>
+                        
+                        <div class="result" id="heatsink-result">
+                            <p>Required Heatsink Resistance: <span id="heatsink-value">--</span> K/W</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Thermal Characteristics -->
+    <section class="thermal-characteristics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Package Thermal Characteristics</h2>
+                <p>Thermal resistance values for common Semikron packages</p>
+            </div>
+            <div class="characteristics-content">
+                <h3>IGBT Module Thermal Resistance</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Configuration</th>
+                                <th>Rth(J-C) [K/W]</th>
+                                <th>Rth(J-H) [K/W]</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SEMITRANS</td>
+                                <td>Phase Leg</td>
+                                <td>0.07 - 0.12</td>
+                                <td>0.25 - 0.40</td>
+                                <td>Standard industrial package</td>
+                            </tr>
+                            <tr>
+                                <td>SEMiX</td>
+                                <td>Phase Leg</td>
+                                <td>0.04 - 0.07</td>
+                                <td>0.15 - 0.25</td>
+                                <td>High power density</td>
+                            </tr>
+                            <tr>
+                                <td>SEMITOP</td>
+                                <td>Phase Leg</td>
+                                <td>0.05 - 0.08</td>
+                                <td>0.18 - 0.30</td>
+                                <td>Top-side cooling</td>
+                            </tr>
+                            <tr>
+                                <td>MiniSKiiP</td>
+                                <td>Phase Leg</td>
+                                <td>0.03 - 0.05</td>
+                                <td>0.12 - 0.20</td>
+                                <td>Integrated driver</td>
+                            </tr>
+                            <tr>
+                                <td>SKiiP</td>
+                                <td>Phase Leg</td>
+                                <td>0.03 - 0.06</td>
+                                <td>0.08 - 0.15</td>
+                                <td>Press-fit technology</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3>Thyristor/Diode Module Thermal Resistance</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Configuration</th>
+                                <th>Rth(J-C) [K/W]</th>
+                                <th>Rth(J-H) [K/W]</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>SEMIPACK 4</td>
+                                <td>Single Thyristor</td>
+                                <td>0.08 - 0.10</td>
+                                <td>0.28 - 0.35</td>
+                                <td>Standard generation</td>
+                            </tr>
+                            <tr>
+                                <td>SEMIPACK 6</td>
+                                <td>Single Thyristor</td>
+                                <td>0.06 - 0.08</td>
+                                <td>0.22 - 0.30</td>
+                                <td>Latest generation</td>
+                            </tr>
+                            <tr>
+                                <td>Semipont</td>
+                                <td>Single Diode</td>
+                                <td>0.07 - 0.12</td>
+                                <td>0.25 - 0.40</td>
+                                <td>Rectifier applications</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooling Methods -->
+    <section class="cooling-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cooling Methods</h2>
+                <p>Comparison of different cooling approaches</p>
+            </div>
+            <div class="methods-content">
+                <div class="method">
+                    <h3>Natural Convection</h3>
+                    <p>Passive cooling relying on natural air circulation:</p>
+                    <ul>
+                        <li>Simple and reliable</li>
+                        <li>Low cost</li>
+                        <li>Limited cooling capacity (typically &lt;50W)</li>
+                        <li>Sensitive to ambient temperature</li>
+                        <li>Requires large heatsinks</li>
+                    </ul>
+                    <p>Typical thermal resistance: 10-50 K/W depending on heatsink size and orientation.</p>
+                </div>
+                
+                <div class="method">
+                    <h3>Forced Air Cooling</h3>
+                    <p>Active cooling with fan-forced air circulation:</p>
+                    <ul>
+                        <li>Good cooling capacity</li>
+                        <li>Relatively low cost</li>
+                        <li>Requires fan maintenance</li>
+                        <li>Sensitive to dust accumulation</li>
+                        <li>Typical thermal resistance: 0.5-5.0 K/W</li>
+                    </ul>
+                </div>
+                
+                <div class="method">
+                    <h3>Liquid Cooling</h3>
+                    <p>Active cooling with liquid heat transfer medium:</p>
+                    <ul>
+                        <li>Excellent cooling capacity</li>
+                        <li>Compact heatsinks</li>
+                        <li>Higher complexity and cost</li>
+                        <li>Requires pump and heat exchanger</li>
+                        <li>Typical thermal resistance: 0.1-0.5 K/W</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thermal Interface Materials -->
+    <section class="thermal-interface">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thermal Interface Materials</h2>
+                <p>Characteristics and selection guidelines for TIMs</p>
+            </div>
+            <div class="interface-content">
+                <div class="interface-guide">
+                    <h3>Thermal Resistance of Interface Materials</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Material Type</th>
+                                    <th>Thermal Conductivity [W/m·K]</th>
+                                    <th>Interface Resistance [K·cm²/W]</th>
+                                    <th>Applications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Thermal Grease (Standard)</td>
+                                    <td>2.0 - 4.0</td>
+                                    <td>0.5 - 1.0</td>
+                                    <td>General purpose</td>
+                                </tr>
+                                <tr>
+                                    <td>Thermal Grease (High Performance)</td>
+                                    <td>4.0 - 7.0</td>
+                                    <td>0.3 - 0.6</td>
+                                    <td>High power applications</td>
+                                </tr>
+                                <tr>
+                                    <td>Thermal Pad</td>
+                                    <td>1.0 - 5.0</td>
+                                    <td>0.7 - 1.5</td>
+                                    <td>Assembly convenience</td>
+                                </tr>
+                                <tr>
+                                    <td>Phase Change Material</td>
+                                    <td>3.0 - 6.0</td>
+                                    <td>0.4 - 0.8</td>
+                                    <td>Temperature cycling</td>
+                                </tr>
+                                <tr>
+                                    <td>Solder</td>
+                                    <td>20 - 80</td>
+                                    <td>0.05 - 0.1</td>
+                                    <td>Permanent applications</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="interface-selection">
+                    <h3>Selection Guidelines</h3>
+                    <ul>
+                        <li><strong>For high power density applications:</strong> Use high-performance thermal grease with thermal conductivity >5 W/m·K</li>
+                        <li><strong>For assembly convenience:</strong> Thermal pads simplify manufacturing but have higher thermal resistance</li>
+                        <li><strong>For temperature cycling:</strong> Phase change materials perform better under thermal cycling than standard greases</li>
+                        <li><strong>For permanent installations:</strong> Solder provides the lowest thermal resistance but is not serviceable</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAE Commentary -->
+    <section class="technical-commentary">
+        <div class="container">
+            <div class="section-header">
+                <h2>FAE Technical Commentary</h2>
+                <p>Expert insights on thermal design</p>
+            </div>
+            <div class="commentary-content">
+                <p><strong>For high-power applications</strong>, always calculate the required thermal resistance at the maximum expected ambient temperature and power dissipation. Many designs work well at room temperature but fail at maximum operating conditions. As a rule of thumb, derate the thermal performance by 20-30% for safety margins.</p>
+                
+                <p><strong>When designing for temperature cycling</strong>, consider the impact of thermomechanical stress on both the power module and the thermal interface material. Power cycling can cause degradation in thermal performance over time, particularly for thermal grease.</p>
+                
+                <p><strong>For press-fit power modules</strong> (like SKiiP), the mounting pressure significantly affects thermal performance. Always follow Semikron's recommended torque values for base plate mounting to ensure proper thermal contact.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculation Examples -->
+    <section class="calculation-examples">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thermal Design Examples</h2>
+                <p>Practical examples for common applications</p>
+            </div>
+            <div class="examples-content">
+                <div class="example">
+                    <h3>Solar Inverter Thermal Design</h3>
+                    <p><strong>Scenario:</strong> 10kW string inverter using SEMiX 1200V/200A module</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li>Power dissipation: 300W (worst case)</li>
+                        <li>Ambient temperature: 50°C (inside enclosure)</li>
+                        <li>Max junction temperature: 150°C</li>
+                        <li>Module Rth(J-C): 0.05 K/W</li>
+                    </ul>
+                    <p><strong>Calculation:</strong></p>
+                    <p>Rth(H-A) required = (TJ - TA - P × Rth(J-C)) / P</p>
+                    <p>Rth(H-A) = (150 - 50 - 300 × 0.05) / 300 = (150 - 50 - 15) / 300 = 0.28 K/W</p>
+                    <p>Therefore, a heatsink with thermal resistance ≤ 0.28 K/W is required at the specified ambient temperature.</p>
+                </div>
+                
+                <div class="example">
+                    <h3>Motor Drive Thermal Design</h3>
+                    <p><strong>Scenario:</strong> 50kW industrial drive using SKiiP 3 system</p>
+                    <p><strong>Parameters:</strong></p>
+                    <ul>
+                        <li>Power dissipation: 1200W (total for system)</li>
+                        <li>Ambient temperature: 40°C</li>
+                        <li>Max junction temperature: 125°C</li>
+                        <li>System Rth(J-H): 0.08 K/W</li>
+                    </ul>
+                    <p><strong>Calculation:</strong></p>
+                    <p>TA required = TJ - P × Rth(J-A)</p>
+                    <p>For Rth(H-A) = 0.05 K/W: TA = 125 - 1200 × (0.08 + 0.05) = 125 - 156 = -31°C</p>
+                    <p>This is impossible, so we need forced cooling with Rth(H-A) ≤ 0.02 K/W</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Thermal Design Assistance?</h2>
+                <p>Our FAE team can perform detailed thermal analysis for your application</p>
+                <a href="../contact.html" class="btn btn-primary">Contact Thermal Experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Semikron Distributor</h3>
+                    <p>Official authorized distributor for Semikron (赛米控) products</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="../products/igbt/index.html">IGBT Modules</a></li>
+                        <li><a href="../products/thyristor/index.html">Thyristor/Diode</a></li>
+                        <li><a href="../products/ipm/index.html">IPM</a></li>
+                        <li><a href="../products/bridge/index.html">Bridge Rectifiers</a></li>
+                        <li><a href="../products/accessories/index.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../solutions/wind-energy.html">Wind Energy</a></li>
+                        <li><a href="../solutions/solar.html">Solar Power</a></li>
+                        <li><a href="../solutions/motor-drives.html">Motor Drives</a></li>
+                        <li><a href="../solutions/ev-hev.html">EV & HEV</a></li>
+                        <li><a href="../solutions/ups.html">UPS Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@elec-distributor.com</p>
+                    <p>WhatsApp: +86 15013702378</p>
+                    <p>WeChat: +86 18612518271</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Group. All rights reserved. Authorized Semikron Distributor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function calculateJunctionTemp() {
+            const power = parseFloat(document.getElementById('power-dissipation').value);
+            const ambient = parseFloat(document.getElementById('ambient-temp').value);
+            const resistance = parseFloat(document.getElementById('thermal-resistance').value);
+            
+            if (!isNaN(power) && !isNaN(ambient) && !isNaN(resistance)) {
+                const junctionTemp = ambient + (power * resistance);
+                document.getElementById('junction-temp-value').textContent = junctionTemp.toFixed(2);
+            } else {
+                document.getElementById('junction-temp-value').textContent = '--';
+            }
+        }
+        
+        function calculateHeatsinkSize() {
+            const maxJunction = parseFloat(document.getElementById('max-junction-temp').value);
+            const maxPower = parseFloat(document.getElementById('max-power').value);
+            const ambient = parseFloat(document.getElementById('ambient-temp2').value);
+            const jcResistance = parseFloat(document.getElementById('jc-resistance').value);
+            
+            if (!isNaN(maxJunction) && !isNaN(maxPower) && !isNaN(ambient) && !isNaN(jcResistance)) {
+                const heatsinkResistance = (maxJunction - ambient - (maxPower * jcResistance)) / maxPower;
+                document.getElementById('heatsink-value').textContent = heatsinkResistance.toFixed(3);
+            } else {
+                document.getElementById('heatsink-value').textContent = '--';
+            }
+        }
+    </script>
+</body>
+</html>

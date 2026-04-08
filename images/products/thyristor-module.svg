@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <!-- Thyristor Module -->
+  <rect x="20" y="30" width="160" height="90" rx="10" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  <path d="M50,70 L80,50 L80,90 Z" fill="#F87171"/>
+  <line x1="80" y1="70" x2="150" y2="70" stroke="#1E3A8A" stroke-width="4"/>
+  <circle cx="40" cy="70" r="8" fill="#D1D5DB"/>
+  <circle cx="160" cy="70" r="8" fill="#D1D5DB"/>
+  <text x="100" y="140" text-anchor="middle" font-family="Arial" font-size="14" fill="#4B5563">Thyristor Module</text>
+</svg>

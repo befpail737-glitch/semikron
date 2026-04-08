@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- UPS Solution -->
+  <!-- AC Input -->
+  <path d="M30,80 Q50,60 70,80 T110,80" fill="none" stroke="#60A5FA" stroke-width="3"/>
+  
+  <!-- Rectifier -->
+  <rect x="110" y="60" width="40" height="40" fill="#FBBF24" stroke="#D97706" stroke-width="2"/>
+  <text x="130" y="85" text-anchor="middle" fill="#1E3A8A" font-family="Arial" font-size="10">Rect</text>
+  
+  <!-- Battery -->
+  <rect x="110" y="120" width="40" height="30" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="2"/>
+  <rect x="110" y="115" width="5" height="5" fill="#9CA3AF"/>
+  <text x="130" y="140" text-anchor="middle" fill="#1F2937" font-family="Arial" font-size="10">Bat</text>
+  
+  <!-- Inverter -->
+  <rect x="180" y="60" width="40" height="40" fill="#3B82F6" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="200" y="85" text-anchor="middle" fill="white" font-family="Arial" font-size="10">Inv</text>
+  
+  <!-- Static Bypass -->
+  <rect x="180" y="120" width="40" height="20" fill="#F87171" stroke="#B91C1C" stroke-width="2"/>
+  <text x="200" y="135" text-anchor="middle" fill="white" font-family="Arial" font-size="9">Bypass</text>
+  
+  <!-- AC Output -->
+  <path d="M250,80 Q270,60 290,80 T300,80" fill="none" stroke="#10B981" stroke-width="3"/>
+  
+  <!-- Power Flow -->
+  <path d="M70,80 L110,80" stroke="#F87171" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M150,80 L180,80" stroke="#F87171" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M130,100 L130,120" stroke="#F87171" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M220,80 L250,80" stroke="#F87171" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M200,120 L200,100" stroke="#F87171" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F87171"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="150" y="190" text-anchor="middle" font-family="Arial" font-size="14" fill="#1E3A8A">UPS Solution</text>
+</svg>

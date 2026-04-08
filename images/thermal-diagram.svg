@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Power Module -->
+  <rect x="50" y="50" width="200" height="100" fill="#3B82F6" stroke="#1E3A8A" stroke-width="2" rx="5"/>
+  <text x="150" y="70" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Power Module</text>
+  
+  <!-- Junction -->
+  <rect x="60" y="60" width="180" height="10" fill="#F87171" stroke="#DC2626" stroke-width="1"/>
+  <text x="150" y="55" text-anchor="middle" fill="#B91C1C" font-family="Arial" font-size="12">Junction (TJ)</text>
+  
+  <!-- Case -->
+  <rect x="60" y="140" width="180" height="10" fill="#A7F3D0" stroke="#059669" stroke-width="1"/>
+  <text x="150" y="165" text-anchor="middle" fill="#047857" font-family="Arial" font-size="12">Case (TC)</text>
+  
+  <!-- Heatsink -->
+  <rect x="40" y="170" width="220" height="20" fill="#FBBF24" stroke="#D97706" stroke-width="1"/>
+  <text x="150" y="185" text-anchor="middle" fill="#92400E" font-family="Arial" font-size="12">Heatsink</text>
+  
+  <!-- Arrows showing heat flow -->
+  <path d="M150 70 L150 140" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M150 150 L150 170" stroke="#EF4444" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444"/>
+    </marker>
+  </defs>
+  
+  <!-- Thermal resistances -->
+  <text x="170" y="95" text-anchor="start" fill="#1E3A8A" font-family="Arial" font-size="12">Rth(J-C)</text>
+  <text x="170" y="160" text-anchor="start" fill="#1E3A8A" font-family="Arial" font-size="12">Rth(C-H)</text>
+</svg>

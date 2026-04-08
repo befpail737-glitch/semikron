@@ -1,0 +1,181 @@
+<!-- ============================================================
+     Google Analytics 4 (GA4) Setup Instructions
+     For: semikron.elec-distributor.com
+     Created: 2026-04-08
+     ============================================================ -->
+
+<!-- STEP 1: Add this code to the <head> section of ALL pages -->
+<!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+
+<!-- Google tag (gtag.js) - Add to all pages -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  // Basic configuration
+  gtag('config', 'G-XXXXXXXXXX', {
+    'send_page_view': true,
+    'cookie_flags': 'SameSite=None;Secure',
+    'custom_map': {
+      'custom_parameter_1': 'country_code',
+      'custom_parameter_2': 'page_type'
+    }
+  });
+</script>
+
+<!-- ============================================================
+     STEP 2: Add Event Tracking Code
+     Add these scripts to relevant pages
+     ============================================================ -->
+
+<!-- Contact Click Tracking - Add to all pages with contact links -->
+<script>
+// Track phone clicks
+document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    gtag('event', 'contact_click', {
+      'contact_type': 'phone',
+      'country': document.documentElement.lang || 'unknown'
+    });
+  });
+});
+
+// Track email clicks
+document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    gtag('event', 'contact_click', {
+      'contact_type': 'email',
+      'country': document.documentElement.lang || 'unknown'
+    });
+  });
+});
+</script>
+
+<!-- Form Submission Tracking - Add to contact pages -->
+<script>
+// Track form submissions
+document.querySelectorAll('form').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    gtag('event', 'generate_lead', {
+      'form_id': form.id || 'contact_form',
+      'form_location': window.location.pathname,
+      'country': document.documentElement.lang || 'unknown'
+    });
+  });
+});
+</script>
+
+<!-- File Download Tracking - Add to pages with PDF downloads -->
+<script>
+// Track PDF downloads
+document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var fileName = link.href.split('/').pop();
+    gtag('event', 'file_download', {
+      'file_name': fileName,
+      'file_extension': 'pdf',
+      'country': document.documentElement.lang || 'unknown'
+    });
+  });
+});
+</script>
+
+<!-- Country Selection Tracking - Add to country selector pages -->
+<script>
+// Track country page selections
+document.querySelectorAll('a[href*="/distributor/"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var countryMatch = link.href.match(/\/distributor\/([a-z]+)\//);
+    if (countryMatch) {
+      gtag('event', 'country_selection', {
+        'country_code': countryMatch[1]
+      });
+    }
+  });
+});
+</script>
+
+<!-- Product View Tracking - Add to product pages -->
+<script>
+// Track product page views
+document.querySelectorAll('a[href*="/products/"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    var productMatch = link.href.match(/\/products\/([a-z-]+)\//);
+    if (productMatch) {
+      gtag('event', 'product_view', {
+        'product_category': productMatch[1]
+      });
+    }
+  });
+});
+</script>
+
+<!-- ============================================================
+     STEP 3: Add to specific pages
+     Copy the appropriate section below to each page
+     ============================================================ -->
+
+<!-- For index.html (Homepage) -->
+<script>
+  gtag('event', 'page_view', {
+    'page_type': 'homepage',
+    'country': 'global'
+  });
+</script>
+
+<!-- For distributor/country pages (e.g., distributor/germany/index.html) -->
+<script>
+  gtag('event', 'page_view', {
+    'page_type': 'country_distributor',
+    'country': 'germany'  // Change for each country
+  });
+</script>
+
+<!-- For product pages (e.g., products/igbt/index.html) -->
+<script>
+  gtag('event', 'page_view', {
+    'page_type': 'product_category',
+    'product': 'igbt'  // Change for each product
+  });
+</script>
+
+<!-- For contact page -->
+<script>
+  gtag('event', 'page_view', {
+    'page_type': 'contact',
+    'country': document.documentElement.lang || 'unknown'
+  });
+</script>
+
+<!-- ============================================================
+     STEP 4: Set up Conversions in GA4
+     Go to GA4 Admin → Events → Mark as conversion
+     ============================================================ -->
+
+<!-- Mark these events as conversions in GA4:
+     1. generate_lead (Primary conversion)
+     2. contact_click (Secondary conversion)
+     3. file_download (Secondary conversion)
+-->
+
+<!-- ============================================================
+     STEP 5: Test Implementation
+     ============================================================ -->
+
+<!-- 
+To test your GA4 implementation:
+
+1. Open your website in a browser
+2. Open Chrome DevTools (F12)
+3. Go to Console tab
+4. Type: dataLayer
+5. You should see the dataLayer array with events
+
+6. Install Google Tag Assistant Chrome extension
+7. Refresh your page
+8. Check that GA4 tag is firing correctly
+
+9. Check Real-time reports in GA4 (may take 24-48 hours for full data)
+-->

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Guide - Semikron Distributor | Component Selection</title>
+    <meta name="description" content="Comprehensive Semikron component selection guide for power electronics. Step-by-step guidance for selecting IGBTs, thyristors, IPMs, and accessories based on application requirements.">
+    <meta name="keywords" content="Semikron selection guide, component selection, IGBT selection, thyristor selection, IPM selection, power electronics design, semikron distributor">
+    <meta name="author" content="LiTong Group">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://semikron.elec-distributor.com/support/selection.html">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Selection Guide - Semikron Distributor",
+      "author": {
+        "@type": "Organization",
+        "name": "LiTong Group"
+      },
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-01-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "LiTong Group",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://semikron.elec-distributor.com/images/logo.png"
+        }
+      },
+      "description": "Comprehensive Semikron component selection guide for power electronics"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>LiTong Group</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../products/index.html">Products</a>
+                        <ul class="dropdown">
+                            <li><a href="../products/igbt/index.html">IGBT Modules</a></li>
+                            <li><a href="../products/thyristor/index.html">Thyristor/Diode</a></li>
+                            <li><a href="../products/ipm/index.html">IPM</a></li>
+                            <li><a href="../products/bridge/index.html">Bridge Rectifiers</a></li>
+                            <li><a href="../products/accessories/index.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../solutions/index.html">Solutions</a>
+                        <ul class="dropdown">
+                            <li><a href="../solutions/wind-energy.html">Wind Energy</a></li>
+                            <li><a href="../solutions/solar.html">Solar Power</a></li>
+                            <li><a href="../solutions/motor-drives.html">Motor Drives</a></li>
+                            <li><a href="../solutions/ev-hev.html">EV & HEV</a></li>
+                            <li><a href="../solutions/ups.html">UPS Systems</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Support</a>
+                        <ul class="dropdown">
+                            <li><a href="selection.html">Selection Guide</a></li>
+                            <li><a href="app-notes.html">Application Notes</a></li>
+                            <li><a href="thermal-calc.html">Calculations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../news/index.html">News</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> > <a href="index.html">Support</a> > Selection Guide
+        </div>
+    </nav>
+
+    <!-- Selection Guide Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Semikron Component Selection Guide</h1>
+                <p>Step-by-step guidance for selecting optimal power semiconductors</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Introduction -->
+    <section class="guide-intro">
+        <div class="container">
+            <h2>Optimizing Your Component Selection Process</h2>
+            <p>Selecting the right Semikron power semiconductor for your application involves evaluating multiple parameters including voltage, current, switching frequency, thermal requirements, and environmental conditions. This guide provides a systematic approach to component selection that ensures optimal performance, reliability, and cost-effectiveness for your specific application requirements. Our factory-trained FAE team has compiled this guide based on decades of experience assisting customers with power electronics designs.</p>
+            
+            <div class="intro-features">
+                <div class="feature">
+                    <h3>Systematic Approach</h3>
+                    <p>Structured methodology for component selection</p>
+                </div>
+                <div class="feature">
+                    <h3>Application Specific</h3>
+                    <p>Guidance tailored to your specific requirements</p>
+                </div>
+                <div class="feature">
+                    <h3>Performance Optimized</h3>
+                    <p>Selection for optimal performance and reliability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selection Process -->
+    <section class="selection-process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Component Selection Process</h2>
+                <p>Methodical approach to selecting optimal Semikron components</p>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Define Application Requirements</h3>
+                    <p>Identify key parameters including:</p>
+                    <ul>
+                        <li>Operating voltage and current</li>
+                        <li>Switching frequency</li>
+                        <li>Thermal constraints</li>
+                        <li>Environmental conditions</li>
+                        <li>Reliability requirements</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Initial Component Type Selection</h3>
+                    <p>Determine the appropriate technology:</p>
+                    <ul>
+                        <li>IGBT: General purpose, good efficiency</li>
+                        <li>MOSFET: High frequency, low power</li>
+                        <li>Thyristor: High power, low frequency</li>
+                        <li>IPM: Integrated solution, compact design</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Rating Verification</h3>
+                    <p>Confirm component ratings match your requirements:</p>
+                    <ul>
+                        <li>Voltage rating (1.2x operating voltage)</li>
+                        <li>Current rating (accounting for thermal derating)</li>
+                        <li>Switching frequency capability</li>
+                        <li>Thermal design validation</li>
+                    </ul>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Package and Topology Selection</h2>
+                    <p>Choose the most suitable package and configuration:</p>
+                    <ul>
+                        <li>Single, half-bridge, or phase-leg topology</li>
+                        <li>Industry-standard or custom package</li>
+                        <li>Thermal interface requirements</li>
+                        <li>Mounting and mechanical constraints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IGBT Selection Guide -->
+    <section class="selection-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>IGBT Selection Guide</h2>
+                <p>Selecting the optimal IGBT technology for your application</p>
+            </div>
+            <div class="guide-content">
+                <h3>Technology Generations</h3>
+                <div class="technology-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Technology</th>
+                                <th>Application Focus</th>
+                                <th>Key Characteristics</th>
+                                <th>Recommended Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>IGBT3</td>
+                                <td>General Purpose</td>
+                                <td>Moderate VCEsat, Good SOA</td>
+                                <td>Motor drives, UPS, power supplies</td>
+                            </tr>
+                            <tr>
+                                <td>IGBT4</td>
+                                <td>Low Loss</td>
+                                <td>Low VCEsat, Optimized tail</td>
+                                <td>Solar inverters, high-efficiency systems</td>
+                            </tr>
+                            <tr>
+                                <td>TRENCHSTOP</td>
+                                <td>Low Frequency</td>
+                                <td>Low switching losses</td>
+                                <td>Welding, uninterruptible power</td>
+                            </tr>
+                            <tr>
+                                <td>Field-Stop</td>
+                                <td>High Frequency</td>
+                                <td>Fast switching, low Qrr</td>
+                                <td>High-frequency power supplies</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3>Package Selection Guide</h3>
+                <div class="package-guide">
+                    <div class="package-option">
+                        <h4>SEMITRANS</h4>
+                        <p>Standard package for general applications. Cost-effective with proven reliability.</p>
+                        <ul>
+                            <li>Current range: 25A to 400A</li>
+                            <li>Voltage range: 600V to 1700V</li>
+                            <li>Best for: Motor drives, UPS, power supplies</li>
+                        </ul>
+                    </div>
+                    <div class="package-option">
+                        <h4>SEMIX</h4>
+                        <p>High-current package with advanced thermal performance.</p>
+                        <ul>
+                            <li>Current range: 200A to 1200A</li>
+                            <li>Voltage range: 600V to 1700V</li>
+                            <li>Best for: High-power industrial drives, solar inverters</li>
+                        </ul>
+                    </div>
+                    <div class="package-option">
+                        <h4>SEMITOP</h4>
+                        <p>Top-side cooling for enhanced thermal performance.</p>
+                        <ul>
+                            <li>Current range: 50A to 400A</li>
+                            <li>Voltage range: 600V to 1700V</li>
+                            <li>Best for: High-power density applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IPM Selection Guide -->
+    <section class="selection-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>IPM Selection Guide</h2>
+                <p>Selecting intelligent power modules for integrated solutions</p>
+            </div>
+            <div class="guide-content">
+                <h3>IPM Series Comparison</h3>
+                <div class="ipm-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Series</th>
+                                <th>Power Range</th>
+                                <th>Integration Level</th>
+                                <th>Key Features</th>
+                                <th>Best Application</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MiniSKiiP</td>
+                                <td>5kW - 100kW</td>
+                                <td>High</td>
+                                <td>Press-fit, copper-less</td>
+                                <td>Compact drives, EV accessories</td>
+                            </tr>
+                            <tr>
+                                <td>SKiiP 3</td>
+                                <td>10kW - 200kW</td>
+                                <td>High</td>
+                                <td>Press-fit, enhanced protection</td>
+                                <td>Wind, industrial drives</td>
+                            </tr>
+                            <tr>
+                                <td>SKiiP 4</td>
+                                <td>10kW - 300kW</td>
+                                <td>High</td>
+                                <td>Latest technology, improved efficiency</td>
+                                <td>High-performance applications</td>
+                            </tr>
+                            <tr>
+                                <td>SKAI Drive</td>
+                                <td>50kW - 300kW</td>
+                                <td>System</td>
+                                <td>Complete subsystem</td>
+                                <td>EV traction, high-power systems</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thyristor Selection Guide -->
+    <section class="selection-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thyristor Selection Guide</h2>
+                <p>Selecting thyristors and diodes for high-power applications</p>
+            </div>
+            <div class="guide-content">
+                <h3>SEMIPACK Generation Guide</h3>
+                <div class="semipack-guide">
+                    <div class="semipack-option">
+                        <h4>SEMIPACK 1-3</h4>
+                        <p>Previous generation technology, widely used with proven reliability.</p>
+                        <ul>
+                            <li>Current range: 100A to 800A</li>
+                            <li>Voltage range: 1200V to 2500V</li>
+                            <li>Best for: Legacy designs, UPS bypass circuits</li>
+                        </ul>
+                    </div>
+                    <div class="semipack-option">
+                        <h4>SEMIPACK 4</h4>
+                        <p>Enhanced technology with improved surge current capability.</p>
+                        <ul>
+                            <li>Current range: 100A to 1000A</li>
+                            <li>Voltage range: 1200V to 2500V</li>
+                            <li>Best for: UPS systems, rectifier applications</li>
+                        </ul>
+                    </div>
+                    <div class="semipack-option">
+                        <h4>SEMIPACK 5-6</h4>
+                        <p>Latest generation with superior thermal characteristics.</p>
+                        <ul>
+                            <li>Current range: 150A to 1200A</li>
+                            <li>Voltage range: 1200V to 2500V</li>
+                            <li>Best for: High-performance rectifiers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application-Based Selection -->
+    <section class="application-selection">
+        <div class="container">
+            <div class="section-header">
+                <h2>Application-Based Selection</h2>
+                <p>Recommended components for common applications</p>
+            </div>
+            <div class="application-grid">
+                <div class="application-card">
+                    <h3>Solar Inverters</h3>
+                    <ul>
+                        <li><strong>Technology:</strong> IGBT4 for efficiency</li>
+                        <li><strong>Package:</strong> SEMiX for high power</li>
+                        <li><strong>Driver:</strong> SKYPER for protection</li>
+                        <li><strong>Consider:</strong> Low partial-load losses</li>
+                    </ul>
+                </div>
+                <div class="application-card">
+                    <h3>Motor Drives</h3>
+                    <ul>
+                        <li><strong>Technology:</strong> IGBT4 or MiniSKiiP</li>
+                        <li><strong>Package:</strong> SEMITRANS or MiniSKiiP</li>
+                        <li><strong>Driver:</strong> SKYPER 32 Pro for fast control</li>
+                        <li><strong>Consider:</strong> High switching frequency</li>
+                    </ul>
+                </div>
+                <div class="application-card">
+                    <h3>UPS Systems</h3>
+                    <ul>
+                        <li><strong>Technology:</strong> IGBT3 for UPS, Thyristor for bypass</li>
+                        <li><strong>Package:</strong> SEMiX or SEMIPACK</li>
+                        <li><strong>Driver:</strong> Reliability focused drivers</li>
+                        <li><strong>Consider:</strong> 24/7 operation</li>
+                    </ul>
+                </div>
+                <div class="application-card">
+                    <h3>Wind Turbines</h3>
+                    <ul>
+                        <li><strong>Technology:</strong> SKiiP for vibration resistance</li>
+                        <li><strong>Package:</strong> Press-fit technology</li>
+                        <li><strong>Driver:</strong> High CMTI drivers</li>
+                        <li><strong>Consider:</strong> Thermal cycling performance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAE Commentary -->
+    <section class="technical-commentary">
+        <div class="container">
+            <div class="section-header">
+                <h2>FAE Technical Commentary</h2>
+                <p>Expert insights on component selection</p>
+            </div>
+            <div class="commentary-content">
+                <p><strong>For high-efficiency applications</strong>, consider the trade-off between VCEsat and switching losses. IGBT4 technology typically offers the best balance for applications operating at 10-20kHz switching frequencies, while older technologies might be preferred for very low switching frequencies.</p>
+                
+                <p><strong>When selecting for thermal performance</strong>, don't just consider the component rating but also the thermal resistance of the complete system. The package design, mounting method, and heatsink selection all contribute to thermal performance.</p>
+                
+                <p><strong>For reliability-critical applications</strong>, implement proper derating strategies. Using components at 80% of their rated current capability can significantly extend operational lifetime. This is especially important in applications with high thermal cycling.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selection Tools -->
+    <section class="selection-tools">
+        <div class="container">
+            <div class="section-header">
+                <h2>Selection Tools</h2>
+                <p>Resources to assist in component selection</p>
+            </div>
+            <div class="tools-grid">
+                <a href="#" class="tool-card">
+                    <h3>Online Selection Tool</h3>
+                    <p>Interactive web-based component selection tool</p>
+                </a>
+                <a href="#" class="tool-card">
+                    <h3>Parametric Search</h3>
+                    <p>Filter components by specific parameters</p>
+                </a>
+                <a href="#" class="tool-card">
+                    <h3>Application Calculator</h3>
+                    <p>Loss calculation for different operating conditions</p>
+                </a>
+                <a href="#" class="tool-card">
+                    <h3>Thermal Calculator</h3>
+                    <p>Junction temperature prediction tools</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Selection Assistance?</h2>
+                <p>Our FAE team can help you select the right Semikron components</p>
+                <a href="../contact.html" class="btn btn-primary">Contact Selection Experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Semikron Distributor</h3>
+                    <p>Official authorized distributor for Semikron (赛米控) products</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="../products/igbt/index.html">IGBT Modules</a></li>
+                        <li><a href="../products/thyristor/index.html">Thyristor/Diode</a></li>
+                        <li><a href="../products/ipm/index.html">IPM</a></li>
+                        <li><a href="../products/bridge/index.html">Bridge Rectifiers</a></li>
+                        <li><a href="../products/accessories/index.html">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../solutions/wind-energy.html">Wind Energy</a></li>
+                        <li><a href="../solutions/solar.html">Solar Power</a></li>
+                        <li><a href="../solutions/motor-drives.html">Motor Drives</a></li>
+                        <li><a href="../solutions/ev-hev.html">EV & HEV</a></li>
+                        <li><a href="../solutions/ups.html">UPS Systems</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@elec-distributor.com</p>
+                    <p>WhatsApp: +86 15013702378</p>
+                    <p>WeChat: +86 18612518271</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiTong Group. All rights reserved. Authorized Semikron Distributor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
