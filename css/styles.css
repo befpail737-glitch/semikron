@@ -2186,3 +2186,137 @@ tr:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================
+   LATEST UPDATES & FAQ SECTION STYLES
+   Added to fix layout issues
+   ============================================ */
+
+/* Latest Updates Section */
+.latest-updates {
+  padding: var(--spacing-2xl) 0;
+  background: var(--light-gray);
+}
+
+.updates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.update-card {
+  background: var(--white);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.update-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--secondary-blue);
+}
+
+.update-card h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+}
+
+.update-card p {
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.update-card a {
+  color: var(--secondary-blue);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.update-card a:hover {
+  text-decoration: underline;
+}
+
+.update-card a::after {
+  content: '→';
+  transition: transform 0.3s ease;
+}
+
+.update-card a:hover::after {
+  transform: translateX(4px);
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  padding: var(--spacing-2xl) 0;
+  background: var(--white);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.faq-item {
+  background: var(--light-gray);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: var(--secondary-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-item h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}
+
+.faq-item p {
+  color: var(--dark-gray);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.faq-item a {
+  color: var(--secondary-blue);
+  text-decoration: underline;
+}
+
+.faq-item a:hover {
+  color: var(--primary-blue);
+}
+
+/* Responsive for Latest Updates & FAQ */
+@media (max-width: 768px) {
+  .updates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .faq-item {
+    padding: var(--spacing-md);
+  }
+  
+  .update-card {
+    padding: var(--spacing-md);
+  }
+}
