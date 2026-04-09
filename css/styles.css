@@ -1793,6 +1793,170 @@ tr:hover {
 }
 
 /* ============================================
+   DISTRIBUTOR DETAIL PAGE STYLES
+   Added to fix layout issues
+   ============================================ */
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.benefit-card {
+  background: var(--white);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--secondary-blue);
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+.benefit-card h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-sm);
+}
+
+.benefit-card p {
+  color: var(--dark-gray);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Country Products Section */
+.country-products {
+  padding: var(--spacing-2xl) 0;
+  background: var(--white);
+}
+
+.country-products .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.country-products .product-card {
+  background: var(--light-gray);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+}
+
+.country-products .product-card:hover {
+  border-color: var(--secondary-blue);
+  box-shadow: var(--shadow-md);
+}
+
+.country-products .product-card h3 {
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--medium-gray);
+}
+
+.country-products .product-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.country-products .product-card li {
+  padding: var(--spacing-xs) 0;
+  color: var(--dark-gray);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.country-products .product-card li:last-child {
+  border-bottom: none;
+}
+
+/* Country Applications Section */
+.country-applications {
+  padding: var(--spacing-2xl) 0;
+  background: var(--light-gray);
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.application-card {
+  background: var(--white);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.application-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary-blue);
+}
+
+.application-card h3 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-sm);
+}
+
+.application-card p {
+  color: var(--dark-gray);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Contact CTA Center */
+.contact-cta-center {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--medium-gray);
+}
+
+.btn-large {
+  padding: var(--spacing-sm) var(--spacing-xl);
+  font-size: var(--font-size-large);
+}
+
+/* Responsive for Distributor Detail Pages */
+@media (max-width: 768px) {
+  .benefits-grid,
+  .country-products .products-grid,
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-card,
+  .country-products .product-card,
+  .application-card {
+    padding: var(--spacing-md);
+  }
+}
+
+/* ============================================
    DISTRIBUTOR OVERVIEW PAGE STYLES
    Added to fix layout issues
    ============================================ */
@@ -2184,6 +2348,221 @@ tr:hover {
   
   .regions-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   WHITEPAPERS PAGE STYLES
+   Added to fix layout issues
+   ============================================ */
+
+/* Whitepapers Page */
+.whitepapers-page {
+  min-height: 100vh;
+}
+
+/* Page Hero for Whitepapers */
+.whitepapers-page .page-hero {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #1e40af 100%);
+  color: var(--white);
+  padding: var(--spacing-2xl) 0;
+  text-align: center;
+}
+
+.whitepapers-page .page-hero h1 {
+  color: var(--white);
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.whitepapers-page .page-hero .lead {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--font-size-large);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Whitepapers Grid */
+.whitepapers-grid {
+  padding: var(--spacing-2xl) 0;
+  background: var(--light-gray);
+}
+
+.whitepapers-grid .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+/* Whitepaper Card */
+.whitepaper-card {
+  background: var(--white);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  gap: var(--spacing-md);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.whitepaper-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--secondary-blue);
+}
+
+.whitepaper-icon {
+  font-size: 48px;
+  flex-shrink: 0;
+  width: 60px;
+  text-align: center;
+}
+
+.whitepaper-content {
+  flex: 1;
+}
+
+.whitepaper-content .category {
+  display: inline-block;
+  background: var(--secondary-blue);
+  color: var(--white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.whitepaper-content h2 {
+  color: var(--primary-blue);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.3;
+}
+
+.whitepaper-content .excerpt {
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.whitepaper-content .topics {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.whitepaper-content .topics li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  color: var(--dark-gray);
+  position: relative;
+  font-size: var(--font-size-small);
+}
+
+.whitepaper-content .topics li::before {
+  content: '•';
+  color: var(--secondary-blue);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.whitepaper-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.whitepaper-meta span {
+  color: var(--medium-gray);
+  font-size: var(--font-size-small);
+}
+
+.whitepaper-meta span::before {
+  content: '|';
+  margin-right: var(--spacing-sm);
+  color: var(--medium-gray);
+}
+
+.whitepaper-meta span:first-child::before {
+  content: none;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  padding: var(--spacing-2xl) 0;
+  background: var(--white);
+  text-align: center;
+  border-top: 1px solid var(--medium-gray);
+}
+
+.newsletter-section h2 {
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-sm);
+}
+
+.newsletter-section p {
+  color: var(--dark-gray);
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-sm);
+  max-width: 500px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--secondary-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Responsive for Whitepapers Page */
+@media (max-width: 768px) {
+  .whitepapers-grid .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .whitepaper-card {
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+  
+  .whitepaper-icon {
+    width: auto;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .whitepaper-content h2 {
+    font-size: var(--font-size-large);
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .newsletter-form input[type="email"] {
+    width: 100%;
   }
 }
 
