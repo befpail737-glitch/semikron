@@ -2534,13 +2534,57 @@ tr:hover {
 /* Introduction Section */
 .intro-section {
   padding: var(--spacing-2xl) 0;
-  background: var(--white);
+  background: linear-gradient(135deg, var(--white) 0%, #f0f7ff 50%, var(--white) 100%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-blue), var(--accent-green), var(--secondary-blue));
+}
+
+.intro-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-blue), var(--accent-green), var(--secondary-blue));
+}
+
+.intro-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .intro-section h2 {
   color: var(--primary-blue);
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: var(--spacing-sm);
+}
+
+.intro-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-blue), var(--accent-green));
+  border-radius: 2px;
 }
 
 .intro-section p {
@@ -2549,6 +2593,29 @@ tr:hover {
   font-size: var(--font-size-large);
   line-height: 1.8;
   color: var(--dark-gray);
+  background: rgba(255, 255, 255, 0.8);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.intro-section p strong {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.intro-section p a {
+  color: var(--secondary-blue);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.intro-section p a:hover {
+  color: var(--primary-blue);
+  border-bottom-color: var(--secondary-blue);
 }
 
 /* Global Distribution Section */
@@ -2642,9 +2709,13 @@ tr:hover {
     justify-content: center;
   }
   
+  .intro-section h2 {
+    font-size: var(--font-size-xl);
+  }
+  
   .intro-section p {
     font-size: var(--font-size-base);
-    padding: 0 var(--spacing-sm);
+    padding: var(--spacing-md);
   }
   
   .region-heading {
