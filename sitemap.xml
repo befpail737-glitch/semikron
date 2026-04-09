@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://semikron.elec-distributor.com/</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://semikron.elec-distributor.com/"/>
@@ -15,7 +15,7 @@
     <!-- About Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/about.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -23,7 +23,7 @@
     <!-- Contact Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/contact.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -31,15 +31,31 @@
     <!-- Products Index -->
     <url>
         <loc>https://semikron.elec-distributor.com/products/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+    </url>
+    
+    <!-- Solutions Index -->
+    <url>
+        <loc>https://semikron.elec-distributor.com/solutions/index.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Support Index -->
+    <url>
+        <loc>https://semikron.elec-distributor.com/support/index.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
     
     <!-- Distributors Index -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -47,7 +63,7 @@
     <!-- USA Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/usa/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-us" href="https://semikron.elec-distributor.com/distributor/usa/"/>
@@ -69,7 +85,7 @@
     <!-- Germany Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/germany/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="de-de" href="https://semikron.elec-distributor.com/distributor/germany/"/>
@@ -80,7 +96,7 @@
     <!-- India Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/india/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-in" href="https://semikron.elec-distributor.com/distributor/india/"/>
@@ -91,7 +107,7 @@
     <!-- France Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/france/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="fr-fr" href="https://semikron.elec-distributor.com/distributor/france/"/>
@@ -102,7 +118,7 @@
     <!-- Vietnam Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/vietnam/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="vi-vn" href="https://semikron.elec-distributor.com/distributor/vietnam/"/>
@@ -113,7 +129,7 @@
     <!-- Japan Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/japan/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="ja-jp" href="https://semikron.elec-distributor.com/distributor/japan/"/>
@@ -124,7 +140,7 @@
     <!-- Korea Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/korea/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="ko-kr" href="https://semikron.elec-distributor.com/distributor/korea/"/>
@@ -135,7 +151,7 @@
     <!-- Italy Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/italy/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="it-it" href="https://semikron.elec-distributor.com/distributor/italy/"/>
@@ -146,7 +162,7 @@
     <!-- Mexico Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/mexico/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="es-mx" href="https://semikron.elec-distributor.com/distributor/mexico/"/>
@@ -157,7 +173,7 @@
     <!-- Poland Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/poland/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="pl-pl" href="https://semikron.elec-distributor.com/distributor/poland/"/>
@@ -168,7 +184,7 @@
     <!-- Turkey Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/turkey/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="tr-tr" href="https://semikron.elec-distributor.com/distributor/turkey/"/>
@@ -179,7 +195,7 @@
     <!-- Malaysia Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/malaysia/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en-my" href="https://semikron.elec-distributor.com/distributor/malaysia/"/>
@@ -190,7 +206,7 @@
     <!-- Brazil Distributor Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/distributor/brazil/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="pt-br" href="https://semikron.elec-distributor.com/distributor/brazil/"/>
@@ -201,7 +217,7 @@
     <!-- Authorization Page -->
     <url>
         <loc>https://semikron.elec-distributor.com/authorized/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -209,50 +225,115 @@
     <!-- Product Category Pages -->
     <url>
         <loc>https://semikron.elec-distributor.com/products/igbt/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://semikron.elec-distributor.com/products/thyristor/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://semikron.elec-distributor.com/products/ipm/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/products/bridge/index.html</loc>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://semikron.elec-distributor.com/products/accessories/index.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Solutions Pages -->
+    <url>
+        <loc>https://semikron.elec-distributor.com/solutions/wind-energy.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/solutions/solar.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/solutions/motor-drives.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/solutions/ev-hev.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/solutions/ups.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Support Pages -->
+    <url>
+        <loc>https://semikron.elec-distributor.com/support/app-notes.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/support/selection.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://semikron.elec-distributor.com/support/thermal-calc.html</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     
     <!-- Priority Improvement Pages -->
     <url>
         <loc>https://semikron.elec-distributor.com/privacy-policy.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     
     <url>
         <loc>https://semikron.elec-distributor.com/case-studies.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://semikron.elec-distributor.com/whitepapers.html</loc>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-04-09</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
