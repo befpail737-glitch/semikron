@@ -895,29 +895,31 @@ tr:hover {
 /* Support Channels */
 .channels-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
 }
 
 .channel {
   background: var(--white);
   border: 1px solid var(--medium-gray);
   border-radius: var(--border-radius-md);
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
   text-align: center;
 }
 
 .channel h3 {
   color: var(--primary-blue);
-  margin-bottom: var(--spacing-xs);
-  font-size: var(--font-size-large);
+  margin-bottom: 2px;
+  font-size: var(--font-size-base);
+  font-weight: 600;
 }
 
 .channel > p {
   margin-bottom: var(--spacing-xs);
   font-size: var(--font-size-small);
-  line-height: 1.4;
+  line-height: 1.3;
+  color: var(--dark-gray);
 }
 
 .contact-methods {
@@ -927,9 +929,10 @@ tr:hover {
 }
 
 .contact-methods li {
-  margin-bottom: 2px;
+  margin-bottom: 0;
   font-size: var(--font-size-small);
-  line-height: 1.3;
+  line-height: 1.2;
+  padding: 1px 0;
 }
 
 .contact-methods a {
